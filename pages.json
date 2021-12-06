@@ -22,6 +22,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/shop/shop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -41,6 +50,10 @@
 			{
 				"text": "我的",
 				"pagePath": "pages/person/person"
+			},
+			{
+				"text": "商场",
+				"pagePath": "pages/shop/shop"
 			}
 		]
 	}
