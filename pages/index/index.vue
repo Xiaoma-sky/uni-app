@@ -19,10 +19,17 @@
 			}
 		},
 		onLoad() {
-			
+			this.getData()
 		},
 		methods: {
-
+			getData(){
+				this.$http({
+					url:'/seller',
+					method:'post'
+				}).then((res)=> {
+					console.log(res)
+				})
+			}
 		}
 	}
 </script>
