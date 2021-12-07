@@ -1,15 +1,14 @@
-// 接口配置地址
-
 const BaseURL = 'http://localhost:8888/api'
 export const http = (options) =>{
 	return new Promise((resolve,reject)=>{
 		uni.request({
 			url: BaseURL + options.url,
-			method: options.method || 'Get',
-			data: {} || options.data,
+			method: options.method || 'GET',
+			data: options.data || {},
+			// if(options.method.toUpperCase() =='POST'){}
 			header: {
 				'Content-type':'application/json',
-				'X-Auth-Token':uni.getStorageSync('authtoken')
+				// 'X-Auth-Token':uni.getStorageSync('authtoken')
 			},
 			dataType: 'json',
 			success: (res) => {

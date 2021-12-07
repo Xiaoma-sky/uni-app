@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/car/car",
-    "pages/person/person"
+    "pages/person/person",
+    "pages/shop/shop"
   ],
   "subPackages": [],
   "window": {
@@ -24,6 +25,10 @@
       {
         "text": "我的",
         "pagePath": "pages/person/person"
+      },
+      {
+        "text": "商场",
+        "pagePath": "pages/shop/shop"
       }
     ]
   },

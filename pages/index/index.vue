@@ -12,21 +12,27 @@
 </template>
 
 <script>
+	import { getList, postList } from '../../api/http.js'
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				id:'1',
+				params:{
+					name:'token',
+					id:'007'
+				}
 			}
 		},
 		onLoad() {
 			this.getData()
 		},
 		methods: {
-			getData(){
-				this.$http({
-					url:'/seller',
-					method:'post'
-				}).then((res)=> {
+			async getData(){
+			     await getList(this.id).then((res)=> {
+					console.log(res)
+				})
+				await postList(this.params).then((res)=> {
 					console.log(res)
 				})
 			}
