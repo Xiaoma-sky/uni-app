@@ -8,7 +8,7 @@
 		}, {
 			"path": "pages/car/car",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "购物车",
 				"enablePullDownRefresh": false
 			}
 

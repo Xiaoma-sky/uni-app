@@ -1,1 +1,1 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text><view>测试代码提交</view><view>测试代码二提交</view><view>测试代码三提交</view><view>测试代码四提交</view></view></view>
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text><view>测试代码提交</view></view></view>
